@@ -194,14 +194,19 @@ padding-top: 263px;
 }
 
 .benefits__cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 55px;
-    padding: 0 100px;
+    display: flex;
+    padding-left: 55px;
 }
-.benefits__card{
-    grid-column: span 1;
-    margin-bottom: 112px;
+.benefits__card1{
+    float: left;
+}
+
+.benefits__card2{
+    float: none;
+}
+
+.benefits__card3{
+    float: right
 }
 
 .benefits__card-pic{
@@ -244,9 +249,10 @@ padding-top: 263px;
 
 /* Places styles start */
 
-.places_title{
-    
+.places{
+    clear: both;
 }
+
 .places_container{
     display: flex;
     flex-wrap: wrap;
@@ -268,9 +274,7 @@ padding-top: 263px;
     opacity: 0.65;
 }
 .places_cards{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    float: left;
 }
 .places_card{
     position: relative;
@@ -286,10 +290,10 @@ padding-top: 263px;
     left: 0;
 }
 .places_card_size{
-    grid-column: span 3;
+    float: left;
 }
 .places_card_size_sm{
-    grid-column: span 2;
+    float: right;
 }
 .places_card_png{
     object-fit: cover;
@@ -300,7 +304,7 @@ padding-top: 263px;
 }
 .places_card_png_sm{
     height: 283px;
-
+    padding-right: 22px;
 }
 .places_card_title{
     font-size: 50px;
