@@ -290,13 +290,17 @@ padding-top: 263px;
     left: 0;
 }
 .places_card_size{
-    float: left;;
+    float: left;
     border-style: solid;
     border-color: white;
     border-width: 10px;
 }
 .places_card_size_sm{
-    float: right;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    display: block;
+    float: left;
 }
 .places_card_png{
     object-fit: cover;
@@ -308,6 +312,8 @@ padding-top: 263px;
 .places_card_png_sm{
     height: 283px;
     padding-right: 19px;
+    display: block;
+    float: left;
 }
 .places_card_title{
     font-size: 50px;
@@ -319,6 +325,10 @@ padding-top: 263px;
     z-index: 3;
 }
 .places_card_png_sm1{
-    border-style: solid;
-    border-color: white;
+    position: absolute;
+    width: 327px;
+}
+.places_card_title1{
+    position: absolute;
+    bottom: -255px;
 }
